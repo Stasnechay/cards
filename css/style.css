@@ -1,0 +1,147 @@
+body{
+	background-color: #228B22;
+}
+
+p{
+	margin: 0;
+	font-size: 25px;
+}
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1000px;
+	padding-top: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.ba-card__container {
+  cursor: pointer;
+  height: 250px;
+  perspective: 600;
+  position: relative;
+  width: 200px;
+margin-bottom: 20px;
+}
+.ba-card {
+  height: 100%;
+  
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  
+  
+  
+}
+.ba-card:hover {
+  transform: rotateY(180deg);
+}
+.ba-card .ba-card__side {
+  backface-visibility: hidden;
+  border-radius: 8px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.ba-card .ba-card__back {
+  background: #f1f1f1;
+  color: #0087cc;
+  transform: rotateY(180deg);
+}
+.ba-card__back {
+	position: relative;
+}
+
+.ba-backside__logo {
+	position: absolute;
+	    top: calc(50% - 40px);
+    left: calc(50% - 100px);
+	height: 80px;
+	width: 200px;
+}
+.ba-backside {
+	height: 100%;
+	width: 100%;
+}
+.ba-card__seniority--top {
+	position: absolute;
+	top:8px;
+	left: 8px;
+	margin: 0;
+}
+
+.ba-card__seniority--bottom {
+	position: absolute;
+	bottom:5px;
+	right: 5px;
+	margin: 0;
+	transform: rotateZ(180deg);
+
+
+}
+.ba-card__seniority-suit {
+	width: 15px;
+	height: 15px;
+}
+.suit_img {
+	position: absolute;
+	top:calc(50% - 15px);
+	left: calc(50% - 15px);
+	height: 30px;
+	width: 30px;
+
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
